@@ -88,9 +88,9 @@ var bubbles = [];
 function setup() {
   createCanvas(1000, 600);
 
-  for (var i = 0; i < 100; i++) {
-    var x = random(0, 600);
-    var y = random(0, 400);
+  for (var i = 0; i < 50; i++) {
+    var x = random(0, width);
+    var y = random(0, height);
     var r = random(25, 50);
     var speed = random(2, 12);
 
@@ -121,14 +121,5 @@ function draw() {
     }
   }
 
-  // if (bubble1.intersects(bubble2)) {
-  //   background(200, 0, 100);
-  // }
-  //
-  // bubble1.show();
-  // bubble2.show();
-  // bubble1.move();
-  // //bubble2.move();
-  // bubble2.x = mouseX;
-  // bubble2.y = mouseY;
+  // console.log(bubbles.length);
 }
